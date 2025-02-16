@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .GalleryPagetopic {
+    text-align: center;
+    padding: 40px 20px;
+
+  }
+  
+  .GalleryPagetopic h1 {
+    margin-top: 0px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: rgb(111, 105, 105);
+  }
+
+  .gallery-main-container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1100px; /* Total width is around 1065px */
+    margin: 0 auto;
+  }
+
+  .gallery-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 50px;
+    margin: 20px auto;
+  }
+
+  .gallery-container .galleryimage {
+
+    height: 220px;
+    width: 100%;
+    border: 1px solid rgb(229, 189, 172);
+    box-shadow: 5px 5px 15px rgb(152, 133, 133);
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+
+.gallery-container .galleryimage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* transition: all 0.3s linear; */
+}
+
+.gallery-container .galleryimage:hover img {
+    transform: scale(1.1);
+}
+
+ .popup-galleryimage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.663);
+  width: 100%;
+  height: 100%;
+}
+
+.popup-galleryimage :is(img){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  border: 1px solid rgb(255, 255, 254);
+}
+
+.popup-galleryimage span {
+  position: absolute;
+  top: 15px; 
+  right: 25px; 
+  z-index: 100;
+  cursor: pointer;
+  color: rgb(255, 255, 255); 
+  font-size: 30px;
+  font-weight: bold;
+  /* background-color: rgba(255, 255, 255, 0.5);  */
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  user-select: none;
+}
+
+.popup-galleryimage span:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+}
