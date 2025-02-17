@@ -11,14 +11,14 @@ body {
 
   .GalleryPagetopic {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 5px;
 
   }
   
   .GalleryPagetopic h1 {
     margin-top: 0px;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-weight: 800;
     color: rgb(111, 105, 105);
   }
@@ -26,7 +26,6 @@ body {
   .gallery-main-container{
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     max-width: 1100px; /* Total width is around 1065px */
     margin: 0 auto;
   }
@@ -36,7 +35,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 15px;
-    padding: 50px;
+    padding: 20px;
     margin: 20px auto;
   }
 
