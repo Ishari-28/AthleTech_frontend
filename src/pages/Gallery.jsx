@@ -16,15 +16,15 @@ const Images = () => {
 
     const [file, setFile] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
-    const [imagesPerPage, setImagesPerPage] = useState(3); // Default images per page
+    const [imagesPerPage, setImagesPerPage] = useState(4); // Default images per page
 
-    // **Function to Update Images Per Page Based on Screen Size**
+    // Function to Update Images Per Page Based on Screen Size
     useEffect(() => {
         const updateImagesPerPage = () => {
         if (window.innerWidth <= 375) {
             setImagesPerPage(4);
         } else {
-            setImagesPerPage(3);
+            setImagesPerPage(4);
         }
         };
        
@@ -110,5 +110,6 @@ const Gallery = () => {
  };
   
 export default Gallery;
+
 
 
