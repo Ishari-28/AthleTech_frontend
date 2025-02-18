@@ -41,8 +41,6 @@ const ContactForm = () => {
 
 const ContactInfo = () => {
   const contactDetails = [
-    // <i className='ti-map-pin' aria-hidden="false"></i>
-    
     { icon: 'ti-map-pin', text: ['MORA KID Athlete,', 'University of Moratuwa, Moratuwa.'] },
     { icon: 'ti-phone', text: ['+94 715921566'] },
     { icon: 'ti-mail', text: ['morakidathlete@gmail.com'] }
@@ -66,15 +64,6 @@ const ContactInfo = () => {
     </div>
   );
 };
-
-// const ContactUs = () => {
-//     return (
-//       <div>
-//         <BannerImage />
-//         <ContactForm />
-//       </div>
-//     );
-//   };
 
 const ContactUs = () => {
   return (
