@@ -1,7 +1,7 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client';
-// import Home from './pages/Home.jsx';
-// import './styles/Home.css';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import App from "./App.jsx";
 
 
 
@@ -33,6 +33,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/aboutus" element={<AboutUs/>} />
       </Routes>
     </Router>
+
   </StrictMode>
 );
 
