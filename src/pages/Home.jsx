@@ -5,6 +5,7 @@ import CountDown from "../components/countDown/CountDown";
 import { eventDay } from "../DB/eventData";
 import description1Img from "../assets/images/runner.png";
 import kidMeet from "../assets/images/kids.png";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -14,7 +15,7 @@ const Main = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: { xs: "70vh", md: "100vh" },
+        height: { xs: "75vh", md: "100vh" },
 
         color: "white",
         textAlign: "center",
@@ -44,7 +45,7 @@ const Main = () => {
           variant="h2"
           sx={{
             fontWeight: 800,
-            fontSize: { xs: "30px", md: "60px" },
+            fontSize: { xs: "35px", md: "60px" },
           }}
         >
           Unleash the <span style={{ color: "#FF754A" }}>Champion</span> in You!
@@ -210,6 +211,9 @@ const MeetContent = () => {
 
 // 2025 Mora Kid Meet
 const MeetDetails = () => {
+  const handleViewSchedule = () => {
+    window.open(eventDay.scheduleLink, "_blank");
+  };
   return (
     <Box
       sx={{
@@ -218,7 +222,7 @@ const MeetDetails = () => {
         justifyContent: "center",
         width: "100%",
 
-        marginTop: "100px",
+        marginTop: { xs: "50px", md: "100px" },
         marginBottom: "50px",
       }}
     >
@@ -309,6 +313,18 @@ const MeetDetails = () => {
               }}
             >
               Register Now
+            </Button>
+
+            <Button
+              sx={{
+                marginLeft: "40px",
+                // backgroundColor: "black",
+                color: "#FF754A",
+                fontWeight: "600",
+              }}
+              onClick={handleViewSchedule}
+            >
+              View Schedule
             </Button>
           </Box>
         </Box>

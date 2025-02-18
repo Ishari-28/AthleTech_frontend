@@ -1,10 +1,10 @@
-import React from 'react';
-import '../styles/ContactUs.css';
+import React from "react";
+import "../styles/ContactUs.css";
 
 const BannerImage = () => {
   return (
-    <div className="bannerImg-Container" >
-      <h1 className='contact-header'>Contact Us</h1>
+    <div className="bannerImg-Container">
+      <h1 className="contact-header">Contact Us</h1>
     </div>
   );
 };
@@ -14,36 +14,75 @@ const ContactForm = () => {
     <form className="form-container">
       <div className="form-row">
         <div className="form-group">
-          <label htmlFor="firstName" className="visually-hidden">First Name</label>
-          <input type="text" id="firstName" placeholder="John" className="form-input" />
+          <label htmlFor="firstName" className="visually-hidden">
+            First Name
+          </label>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="John"
+            className="form-input"
+          />
         </div>
         <div className="form-group">
-          <label htmlFor="lastName" className="visually-hidden">Last Name</label>
-          <input type="text" id="lastName" placeholder="Last Name*" className="form-input" />
+          <label htmlFor="lastName" className="visually-hidden">
+            Last Name
+          </label>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Last Name*"
+            className="form-input"
+          />
         </div>
       </div>
       <div className="form-group">
-        <label htmlFor="email" className="visually-hidden">Email</label>
-        <input type="email" id="email" placeholder="Email*" className="form-input" />
+        <label htmlFor="email" className="visually-hidden">
+          Email
+        </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email*"
+          className="form-input"
+        />
       </div>
       <div className="form-group">
-        <label htmlFor="phone" className="visually-hidden">Phone Number</label>
-        <input type="tel" id="phone" placeholder="Phone Number*" className="form-input" />
+        <label htmlFor="phone" className="visually-hidden">
+          Phone Number
+        </label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Phone Number*"
+          className="form-input"
+        />
       </div>
       <div className="form-group">
-        <label htmlFor="message" className="visually-hidden">Your message</label>
-        <textarea id="message" placeholder="Your message..." className="form-input message-input" />
+        <label htmlFor="message" className="visually-hidden">
+          Your message
+        </label>
+        <textarea
+          id="message"
+          placeholder="Your message..."
+          className="form-input message-input"
+        />
       </div>
-      <button type="submit" className="submit-button">Send Message</button>
+      <button type="submit" className="submit-button">
+        Send Message
+      </button>
     </form>
   );
 };
 
 const ContactInfo = () => {
   const contactDetails = [
-    { icon: 'ti-map-pin', text: ['MORA KID Athlete,', 'University of Moratuwa, Moratuwa.'] },
-    { icon: 'ti-phone', text: ['+94 715921566'] },
-    { icon: 'ti-mail', text: ['morakidathlete@gmail.com'] }
+    {
+      icon: "ti-map-pin",
+      text: ["MORA KID Athlete,", "University of Moratuwa, Moratuwa."],
+    },
+    { icon: "ti-phone", text: ["+94 715921566"] },
+    { icon: "ti-mail", text: ["morakidathlete@gmail.com"] },
   ];
 
   return (
@@ -78,11 +117,10 @@ const ContactUs = () => {
           </p>
           <ContactInfo />
         </div>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </div>
   );
 };
 
-  
 export default ContactUs;

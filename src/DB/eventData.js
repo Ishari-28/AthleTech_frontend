@@ -5,4 +5,6 @@ export const eventDay = {
   formLink:
     "https://docs.google.com/forms/d/e/1FAIpQLSenVb1STuN3uR-nMfs-Uk_eaIt9-DxlC3rIGR2CP66SNkG-YA/viewform",
   isRegistrationOpen: true,
+  scheduleLink:
+    "https://drive.google.com/file/d/1ziV6zcPQeZVk8b2kdbzQtSuAgkGNevHT/view?usp=drive_link",
 };
