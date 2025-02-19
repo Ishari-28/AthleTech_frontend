@@ -1,29 +1,42 @@
 import { useState, useEffect } from "react";
 import "../styles/Gallery.css";
-import { GalleryImage } from "./GalleryImage";   
+import { GalleryImage } from "./GalleryImage";
 import { ChevronLeft, ChevronRight } from "lucide-react"; // Import icons for pagination
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+
+import bgImage from "../assets/images/Home Page Carousel.svg";
 
 const PageName = () => {
   return (
-    <>
-      <div className="GalleryPagetopic">
-        <Typography
-          sx={{
-            fontSize: { xs: "40px", md: "60px" },
-            fontWeight: 800,
-          }}
-        >
-          Gallery of <span style={{ color: "#FF754A" }}>Champions</span>
-        </Typography>
-        <Typography sx={{ marginTop: "5px", width: "80%" }}>
-          Celebrating the spirit of athletics—one moment at a time.
-        </Typography>
-      </div>
-    </>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "60vh",
+        color: "white",
+      }}
+    >
+      <Typography
+        sx={{
+          fontSize: { xs: "40px", md: "60px" },
+          fontWeight: 800,
+        }}
+      >
+        Gallery of <span style={{ color: "#FF754A" }}>Champions</span>
+      </Typography>
+      <Typography sx={{ marginTop: "5px", width: "80%" }}>
+        Celebrating the spirit of athletics—one moment at a time.
+      </Typography>
+    </Box>
   );
 };
-
 
 const Images = () => {
   // console.log(GalleryImage)
@@ -121,7 +134,6 @@ const Gallery = () => {
     <div>
       <PageName />
       <Images />
-      
     </div>
   );
 };
