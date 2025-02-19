@@ -6,6 +6,7 @@ import img4 from "../assets/images/AboutUsImages/Ishari.jpg";
 import img5 from "../assets/images/AboutUsImages/Himesha.jpg";
 import img6 from "../assets/images/AboutUsImages/Miththika.jpg";
 import img7 from "../assets/images/AboutUsImages/Sanudi.jpg";
+import cover from "../assets/images/AboutUsImages/12.jpg";
 
 const committeeMembers = [
   {
@@ -52,10 +53,7 @@ const AboutUs = () => {
       {/* About Section */}
       <section className="about-section ">
         <div className="about-image">
-          <img
-            src="src/assets/images/AboutUsImages/12.jpg"
-            alt="Athlete in starting position"
-          />
+          <img src={cover} alt="Athlete in starting position" />
         </div>
         <div className="about-content">
           <h2>About us</h2>

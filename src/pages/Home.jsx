@@ -5,7 +5,6 @@ import CountDown from "../components/countDown/CountDown";
 import { eventDay } from "../DB/eventData";
 import description1Img from "../assets/images/runner.png";
 import kidMeet from "../assets/images/kids.png";
-import { useNavigate } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -333,6 +332,13 @@ const MeetDetails = () => {
   );
 };
 
+import partnerImg1 from "../assets/images/Cramp guard plus.svg";
+import partnerImg2 from "../assets/images/Samaposha.svg";
+import partnerImg3 from "../assets/images/Pick_me.svg";
+import partnerImg4 from "../assets/images/partners 2.svg";
+import partnerImg5 from "../assets/images/Moraspirit.svg";
+import partnerImg6 from "../assets/images/Ncinga.svg";
+
 // Partners Section
 const Partners = () => {
   return (
@@ -346,7 +352,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="./src/assets/images/Cramp guard plus.svg"
+              src={partnerImg1}
               alt="Crampguard Logo"
               className="partner-logo"
             />
@@ -357,7 +363,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="./src/assets/images/Samaposha.svg"
+              src={partnerImg2}
               alt="Samaposha Logo"
               className="partner-logo"
             />
@@ -367,11 +373,7 @@ const Partners = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="./src/assets/images/Pick_me.svg"
-              alt="PickMe Logo"
-              className="partner-logo"
-            />
+            <img src={partnerImg3} alt="PickMe Logo" className="partner-logo" />
           </a>
           <a
             href="https://www.partner4.com"
@@ -379,7 +381,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="./src/assets/images/partners 2.svg"
+              src={partnerImg4}
               alt="Partner 4 Logo"
               className="partner-logo"
             />
@@ -390,7 +392,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="./src/assets/images/Moraspirit.svg"
+              src={partnerImg5}
               alt="MoraSpirit Logo"
               className="partner-logo"
             />
@@ -401,7 +403,7 @@ const Partners = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="./src/assets/images/Ncinga.svg"
+              src={partnerImg6}
               alt="Partner 6 Logo"
               className="partner-logo"
             />
