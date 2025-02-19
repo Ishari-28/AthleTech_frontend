@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
+// import ContactUs from "./pages/ContactUs";
 import Gallery from "./pages/Gallery";
 import Home from "./pages/Home";
 import {

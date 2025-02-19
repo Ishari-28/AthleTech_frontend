@@ -1,11 +1,10 @@
-import React from "react";
-import '../styles/AboutUs.css';
+import "../styles/AboutUs.css";
 
 const committeeMembers = [
   {
     name: "Samodh Dharmaraja",
     phone: "+94 77 677 4768",
-    image: "src/assets/images/AboutUsImages/samod 1.1.jpg"  
+    image: "src/assets/images/AboutUsImages/samod 1.1.jpg",
   },
   {
     name: "Dulith Dilshan",
@@ -44,11 +43,9 @@ const committeeMembers = [
   },
 ];
 
-  
 const AboutUs = () => {
-    return (
-      
-        <div className="about-us">
+  return (
+    <div className="about-us">
       {/* About Section */}
       <section className="about-section ">
         <div className="about-image">
@@ -89,22 +86,25 @@ const AboutUs = () => {
           ))}
         </div>
       </section> */}
-        
+
       <section className="committee-section">
         <h2>Organizing Committee</h2>
         <div className="committee-grid">
           {committeeMembers.map((member, index) => (
-            <a key={index} href={`tel:${member.phone}`} className="committee-member">
+            <a
+              key={index}
+              href={`tel:${member.phone}`}
+              className="committee-member"
+            >
               <div className="member-image">
                 <img src={member.image} alt={member.name} />
               </div>
-            <h3>{member.name}</h3>
-            <p>{member.phone}</p>
+              <h3>{member.name}</h3>
+              <p>{member.phone}</p>
             </a>
           ))}
         </div>
       </section>
-
     </div>
   );
 };
