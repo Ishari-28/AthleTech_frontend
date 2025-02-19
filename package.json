@@ -9,11 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "overrides": {
-  "vite": {
-    "rollup": "npm:@rollup/wasm-node"
-  }
-},
+ 
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
