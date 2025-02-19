@@ -11,18 +11,25 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import uniLogo from "../../assets/images/uniLogo.png";
 import eventLogo from "../../assets/images/eventLogo.png";
+import { useNavigate } from "react-router-dom";
 
-const pages = ["Home", "Gallery", "Coaches", "About", "Contact Us"];
+const pages = [
+  { page: "Home", path: "/" },
+  { page: "Gallery", path: "/gallery" },
+  { page: "About Us", path: "/aboutus" },
+];
 
 function Navbar() {
+  const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (path) => {
     setAnchorElNav(null);
+    navigate(path);
   };
 
   return (
@@ -72,8 +79,11 @@ function Navbar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page.page}
+                  onClick={() => handleCloseNavMenu(page.path)}
+                >
+                  <Typography textAlign="center">{page.page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -84,7 +94,7 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => handleCloseNavMenu(page.path)}
                 sx={{
                   my: 2,
                   color: "white",
@@ -92,7 +102,7 @@ function Navbar() {
                   fontSize: "12px",
                 }}
               >
-                {page}
+                {page.page}
               </Button>
             ))}
           </Box>
