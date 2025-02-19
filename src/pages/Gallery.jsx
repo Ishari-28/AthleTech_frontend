@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/Gallery.css";
-import { GalleryImage } from "./GalleryImage";
+import { GalleryImage } from "./GalleryImage";   
 import { ChevronLeft, ChevronRight } from "lucide-react"; // Import icons for pagination
 import { Typography } from "@mui/material";
 
@@ -23,6 +23,7 @@ const PageName = () => {
     </>
   );
 };
+
 
 const Images = () => {
   // console.log(GalleryImage)
@@ -120,6 +121,7 @@ const Gallery = () => {
     <div>
       <PageName />
       <Images />
+      
     </div>
   );
 };

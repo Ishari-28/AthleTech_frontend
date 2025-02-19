@@ -3,39 +3,44 @@ import '../styles/AboutUs.css';
 
 const committeeMembers = [
   {
-    name: "Samooth Dhanmaraja",
+    name: "Samodh Dharmaraja",
     phone: "+94 77 677 4768",
-    image: "src/assets/images/AboutUsImages/Dulith.jpg"
+    image: "src/assets/images/AboutUsImages/samod 1.1.jpg"  
   },
   {
     name: "Dulith Dilshan",
     phone: "+94 76 935 1593",
-    image:
-      "src/assets/images/AboutUsImages/Dulith.jpg",
+    image: "src/assets/images/AboutUsImages/Dulith.jpg",
   },
   {
     name: "Janith Ravishanka",
     phone: "+94 76 668 1593",
-    image:
-      "src/assets/images/AboutUsImages/Dulith.jpg",
+    image: "src/assets/images/AboutUsImages/Janith 1.1.jpg",
+  },
+  {
+    name: "Ravindu Nethsara ",
+    phone: "+94 77 556 6553",
+    image: "src/assets/images/AboutUsImages/Ravindu.jpg",
   },
   {
     name: "Ishari Abeysooriya",
-    phone: "+94 71 556 1566",
-    image:
-      "src/assets/images/AboutUsImages/Dulith.jpg",
-  },
-  {
-    name: "Ravindu Nethsara",
-    phone: "+94 77 556 6553",
-    image:
-      "src/assets/images/AboutUsImages/Dulith.jpg",
+    phone: "+94 71 592 1566",
+    image: "src/assets/images/AboutUsImages/Ishari.jpg",
   },
   {
     name: "Himesha Kodithuwakku",
     phone: "+94 77 668 6553",
-    image:
-      "src/assets/images/AboutUsImages/Dulith.jpg",
+    image: "src/assets/images/AboutUsImages/Himesha.jpg",
+  },
+  {
+    name: "Miththika Samarathunga",
+    phone: "+94 77 668 6553",
+    image: "src/assets/images/AboutUsImages/Miththika.jpg",
+  },
+  {
+    name: "Sanudi Perera",
+    phone: "+94 76 974 7344",
+    image: "src/assets/images/AboutUsImages/Sanudi.jpg",
   },
 ];
 
@@ -70,7 +75,7 @@ const AboutUs = () => {
       </section>
 
       {/* Organizing Committee Section */}
-      <section className="committee-section">
+      {/* <section className="committee-section">
         <h2>Organizing Committee</h2>
         <div className="committee-grid">
           {committeeMembers.map((member, index) => (
@@ -83,7 +88,23 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
+      </section> */}
+        
+      <section className="committee-section">
+        <h2>Organizing Committee</h2>
+        <div className="committee-grid">
+          {committeeMembers.map((member, index) => (
+            <a key={index} href={`tel:${member.phone}`} className="committee-member">
+              <div className="member-image">
+                <img src={member.image} alt={member.name} />
+              </div>
+            <h3>{member.name}</h3>
+            <p>{member.phone}</p>
+            </a>
+          ))}
+        </div>
       </section>
+
     </div>
   );
 };
