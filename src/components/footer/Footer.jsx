@@ -42,6 +42,9 @@ function Footer() {
             University of Moratuwa
           </Typography>
           <Typography sx={{ lineHeight: "24px", fontSize: "14px" }}>
+            Bandaranayake Mawatha, Moratuwa
+          </Typography>
+          <Typography sx={{ lineHeight: "24px", fontSize: "14px" }}>
             Sri Lanka
           </Typography>
           <Typography sx={{ lineHeight: "24px", fontSize: "14px" }}>

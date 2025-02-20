@@ -191,16 +191,30 @@ const MeetContent = () => {
           </Typography>
 
           <Typography variant="body1" paragraph>
-            Welcome to the official home of &quot;Mora Kid Athlete&quot; – where
-            the future champions of Sri Lanka make their debut! Here, young
-            athletes can register for the exciting competition, and parents can
-            easily access event details. This platform is dedicated to bringing
-            you the latest updates on the all-island kids’ athletic meet,
-            organized by the University of Moratuwa Athletic Team. Stay
-            connected as we share event highlights, results, and inspiring
-            stories of young athletes as they strive for greatness. Explore more
-            about our university’s proud athletic heritage, meet the athletes,
-            and join us in celebrating the next generation of sporting talent!
+            Welcome to Mora Kid Athletic, the premier all-island kids’ athletic
+            meet, proudly organized by{" "}
+            <span style={{ fontWeight: 600 }}>
+              {" "}
+              the University of Moratuwa Athletic Team.
+            </span>
+            This event provides an exciting platform for young athletes from
+            across Sri Lanka to showcase their talent, push their limits, and
+            take the first step toward a promising athletic future.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            We are dedicated to discovering the next generation of champions by
+            fostering a competitive yet supportive environment where young
+            athletes can thrive. Through Mora Kid Athletic, we aim to inspire a
+            passion for excellence, teamwork, and sportsmanship in every
+            participant. This event is a celebration of determination,
+            perseverance, and the drive to succeed.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            Stay connected for event updates, motivational success stories, and
+            the latest highlights. Join us in building a legacy of athletic
+            brilliance that will leave a lasting impact on Sri Lankan sports.
+            Let’s come together to shape the future of athletics and empower the
+            young stars who will define the next era of champions!
           </Typography>
         </Box>
       </Box>
@@ -336,7 +350,7 @@ import partnerImg1 from "../assets/images/Cramp guard plus.svg";
 import partnerImg2 from "../assets/images/Samaposha.svg";
 import partnerImg3 from "../assets/images/Pick_me.svg";
 import partnerImg4 from "../assets/images/partners 2.svg";
-import partnerImg5 from "../assets/images/Moraspirit.svg";
+import partnerImg5 from "../assets/images/bairaha.jpeg";
 import partnerImg6 from "../assets/images/Ncinga.svg";
 
 // Partners Section
