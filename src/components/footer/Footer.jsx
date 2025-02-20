@@ -48,7 +48,7 @@ function Footer() {
             Sri Lanka
           </Typography>
           <Typography sx={{ lineHeight: "24px", fontSize: "14px" }}>
-            071 5921566
+            071 777 7838
           </Typography>
         </Box>
 
